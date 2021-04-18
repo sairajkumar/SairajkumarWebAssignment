@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <div id="webView" class="web-view">
+        <div id="bgContainer" class="dashboard-bg-container">
+            <div id="dashboardMenu" class="dashboard-menu">
+                <div>
+                    <div class="dashboard-menu-logo-container">
+                        <img class="dash-menu-logo" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618721959/companylogowithname_ckum4q.png" />
+                    </div>
+                    <hr class="hr-line" />
+
+                    <ul class="dashboard-menu-list">
+                        <li class="dashboard-menu-list-element wallet-list-element">
+                            <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722063/wallet_vqjpzu.png" />
+                            <p class="list-element-name" style="color:#2C2C2C">Wallet</p>
+                        </li>
+                        <li id="dashboardListElemnt1" class="dashboard-menu-list-element">
+                            <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722169/wolfpacks_vxrt4i.png" />
+                            <p class="list-element-name">Wolfpacks</p>
+                        </li>
+                        <li id="dashboardListElemnt2" class="dashboard-menu-list-element">
+                            <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722297/portfolio_ncrlyl.png" />
+                            <p class="list-element-name">Portfolio</p>
+                        </li>
+                        <li id="dashboardListElemnt3" class="dashboard-menu-list-element">
+                            <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722350/tranpsarancy_k6x7gh.png" />
+                            <p class="list-element-name">Transparency</p>
+                        </li>
+                        <li id="dashboardListElemnt4" class="dashboard-menu-list-element">
+                            <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722386/allproperties_eailvg.png" />
+                            <p class="list-element-name">All Properties</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="alertCard" class="alert-card">
+
+                    <div class="alert-content-card">
+                        <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722433/checked_ttjg7g.png" class="checked-img">
+                        <img class="dashboard-close-icon" id="alertClose" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722126/menuclose_yyupiq.png" />
+                        <p class="alert-content">Your account is not yet activated to sell Freedom Coins™. Please specify your PayPal payment address to activate your account.</p>
+                        <button class="click-here-button">Click here</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dashboard" class="dashboard">
+                <div class="navbar">
+                    <div>
+                        <a style="color:#2C2C2C" class="navbar-link" href="#overview">Overview</a>
+                        <a class="navbar-link" href="#savings">Savings</a>
+                        <a class="navbar-link" href="#investments">Investments</a>
+                    </div>
+                    <div class="profile-container">
+                        <div class="notifications-container">
+                            <img class="notification-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722547/message_li09sy.png" />
+                            <img class="notification-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722618/notification_vlke8x.png" />
+                        </div>
+                        <div class="investor-container">
+                            <div class="investor-img-container">
+                                <img class="investor-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722688/savemoney_gg6afe.png" />
+
+                            </div>
+                            <p class="investor-text">Investor</p>
+                        </div>
+                        <hr class="pipe-line" />
+                        <div class="profile-img-container">
+                            <img class="profile-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722847/dhoni_mkzghp.jpg" />
+                        </div>
+                        <div class="dropdown-container">
+                            <h1 class="profile-name">Robert Downey</h1>
+
+                            <div class="dropdown">
+                                <img id="dropButton" onclick="myFunction()" class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722797/dropd_sorvnk.png" />
+                                <div id="myDropdown" class="dropdown-content">
+                                    <ul class="dropdown-list">
+                                        <li class="dropdown-element">
+                                            <img class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722941/profile_fztehx.png" />
+                                            <p class="dropdown-name">Profile</p>
+                                        <li>
+                                            <hr />
+                                        <li class="dropdown-element">
+                                            <img class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723019/account_cyexfh.png" />
+                                            <p class="dropdown-name">Update Account</p>
+                                        <li>
+                                            <hr />
+                                        <li class="dropdown-element">
+                                            <img class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723019/logout_kyrask.png" />
+                                            <p class="dropdown-name">Log Out</p>
+                                        <li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="line-container">
+                    <hr class="highlight-line" />
+                    <hr class="lite-line" />
+                </div>
+                <div class="dashboard-container">
+                    <div class="amount-container">
+
+                        <div class="info-container">
+
+                            <div class="info-box total-balance-box">
+                                <p class="info">Total Balance</p>
+                                <a class="total-balance-icon"><img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722895/popup_gwuvh6.png"></a>
+
+                                <p class="pop-up total-balance-pop-up">Total Balance, it includes overall balance like Freedom coins, property investment & wolfpack investment. </p>
+
+                                <p class="info">: $60.00</p>
+                            </div>
+                            <div class="info-box">
+                                <p class="info">Wallet Address</p>
+                                <img class="wallet-address-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723221/qrcode_vsx0kv.png" />
+                                <img class="qr-code" src="https://as2.ftcdn.net/jpg/03/38/27/81/500_F_338278102_GJFa5X3bLsrH2OU5xLmJCCN8L9Fg6ttD.jpg" />
+                            </div>
+                        </div>
+                        <div class="account-container">
+                            <div class="account-details">
+                                <div class="Checkings account-1">
+                                    <div class="heading-box">
+                                        <p class="heading">Checking</p>
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="account-prop">Cash</p>
+                                        <p>:</p>
+                                        <p class="account-value">$20.00</p>
+                                    </div>
+                                    <div class="input-container">
+                                        <p class="buy-coins account-prop">Buy Coins<sup class="super">TM</sup></p>
+                                        <div class="input-box">
+                                            <div id="buyInput" class="input">
+                                                <p id="buyCoins">0</p>
+                                                <div class="arrow-container">
+                                                    <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/upArrow_max5pv.png" class="arrow" />
+                                                    <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/downArrow_nsdab8.png" class="arrow" />
+                                                </div>
+                                            </div>
+
+                                            <button class="button buy-button">
+                                                Buy
+                                            </button>
+                                            <p class="pop-up buy-pop-up">Read FAQ's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="savings account-2">
+                                    <div class="heading-box">
+                                        <p class="heading">Savings</p>
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="account-prop">Invested</p>
+                                        <p class="column">:</p>
+                                        <p class="account-value">$20.00</p>
+                                    </div>
+                                    <div class="account-info payout">
+                                        <p class="account-prop">Total Payout</p>
+                                        <img class="total-payout-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722895/popup_gwuvh6.png" />
+                                        <p class="pop-up total-payout-pop-up">Projected Total payments based on term an APR</p>
+                                        <p class="column">:</p>
+                                        <p class="account-value">$27.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-details">
+                                <div class="transfers account-1">
+                                    <div class="heading-box">
+                                        <p class="heading">Transfers</p>
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="account-prop">Paypal</p>
+                                        <p>:</p>
+                                        <p class="account-value">Bank Account</p>
+                                    </div>
+                                    <div class="input-container">
+                                        <p class="buy-coins account-prop">Sell Coins<sup class="super">TM</sup></p>
+                                        <div class="input-box">
+                                            <div id="sellInput" class="input">
+                                                <p id="sellCoins">0</p>
+                                                <div class="arrow-container">
+                                                    <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/upArrow_max5pv.png" class="arrow" />
+                                                    <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/downArrow_nsdab8.png" class="arrow" />
+                                                </div>
+                                            </div>
+                                            <button class="sell-button button">
+                                                Sell
+                                            </button>
+                                            <p class="pop-up sell-pop-up">Read FAQ's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="investments account-2">
+                                    <div class="heading-box">
+                                        <p class="heading">Investments</p>
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="account-prop">Invested</p>
+                                        <p class="column">:</p>
+                                        <p class="account-value">$20.00</p>
+                                    </div>
+                                    <div class="account-info payout">
+                                        <p class="account-prop">Contributed</p>
+
+                                        <p class="column">:</p>
+                                        <p class="account-value">$27.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions">
+                            <h1 class="transactions-heading">Recent Transactions</h1>
+                            <table style="100%">
+                                <tr>
+                                    <th class="date-head">Date</th>
+                                    <th class="transactions-head">Transaction</th>
+                                    <th class="amount-head">Amount</th>
+                                </tr>
+                                <tr>
+                                    <td class="date">09 Mar 2020</td>
+                                    <td class="transaction">20922 Avalon Drive (Jon Hea..) - Dividend</td>
+
+                                    <td class="amount" style="color:#05CF5B">-$10.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09 Mar 2020</td>
+                                    <td class="transaction">20922 Avalon Drive (Jon Hea..) - Purchase</td>
+
+                                    <td class="amount">-$1080.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09 Mar 2020</td>
+                                    <td class="transaction">Freedom Coin - Deposit</td>
+
+                                    <td class="amount" style="color:#05CF5B">-$10.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09 Mar 2020</td>
+                                    <td class="transaction">Freedom Coin - Withdrwal</td>
+
+                                    <td class="amount">-$500.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09 Mar 2020</td>
+                                    <td class="transaction">Profit Wolfpack (Alpha Name) — Purchase</td>
+
+                                    <td class="amount">-$400.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09 Mar 2020</td>
+                                    <td class="transaction">Non Profit Wolfpack (Alpha N..) — Contribute</td>
+
+                                    <td class="amount">-$400.00</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="view-more-box">
+                            <a href="#" class="view-more">View More</a>
+                        </div>
+                    </div>
+                    <div class="assets-container">
+                        <h1 class="assets-heading">Available Assets</h1>
+                        <div class="asset-card">
+                            <div class="asset-img-box">
+                                <img class="asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723737/lungs_zx3wh4.png" />
+                            </div>
+                            <div class="asset-data">
+                                <h1 class="asset-name">Potential Covid-19 Cure: Clinical Trial</h1>
+                                <div>
+                                    <p class="asset-subhead">Description:</p>
+                                    <p class="asset-content">A well known, safe, generic medication that has been used for decades has been shown to….</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-card">
+                            <div class="asset-img-box">
+                                <img class="asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723739/mission_wottyo.png" />
+                            </div>
+                            <div class="asset-data">
+                                <div class="mission">
+                                    <h1 class="asset-name">Mission</h1>
+                                    <img class="mission-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723820/missionIcon_pzzwqk.png" />
+                                    <p class="pop-up mission-pop-up">For Profile Feed</p>
+                                </div>
+                                <div>
+                                    <p class="asset-subhead">Description:</p>
+                                    <p class="asset-content">Ownership in Minuteman is decentralized and distributed democratically across its base of…</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-card">
+                            <div class="asset-img-box">
+                                <img class="asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723739/room_meewqs.png" />
+                            </div>
+                            <div class="asset-data">
+                                <h1 class="asset-name">20922 Avalon Drive</h1>
+                                <div>
+                                    <p class="asset-subhead">Address:</p>
+                                    <p class="asset-content">8801 Holly Road<br /> Tullahoma, TN 37388</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-card">
+                            <div class="asset-img-box">
+                                <img class="asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723738/lounge_kmat6c.png" />
+                            </div>
+                            <div class="asset-data">
+                                <h1 class="asset-name">17456 Eastgate Drive</h1>
+                                <div>
+                                    <p class="asset-subhead">Address:</p>
+                                    <p class="asset-content">23 North Briarwood Avenue<br /> Williamsburg, VA 23185</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-more-box">
+                            <a href="#" class="view-more">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-link-container">
+                    <a onclick="changeView()" href="#" id="responsiveView" class="responsive-link">Go to Mobile Responsive View</a>
+                    <div class="company-logo-box">
+                        <img class="company-logo" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723221/companyLogo_rc5ue9.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobileView" class="mobile-view">
+        <div id="mobileDashboardMenu" class="close mobile-dashboard dashboard-menu">
+            <div>
+                <div class="dashboard-menu-logo-container mbl-dash-flex">
+                    <img class="dash-menu-logo mobile-dash-logo" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618721959/companylogowithname_ckum4q.png" />
+
+                </div>
+                <hr class="hr-line" />
+                <img id="mobilemenuClose" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722126/menuclose_yyupiq.png" class="menu-icon" />
+                <ul class="dashboard-menu-list">
+                    <li class="dashboard-menu-list-element wallet-list-element">
+                        <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722063/wallet_vqjpzu.png" />
+                        <p class="list-element-name" style="color:#2C2C2C;">Wallet</p>
+                    </li>
+                    <li id="dashboardListElemnt1" class="dashboard-menu-list-element">
+                        <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722169/wolfpacks_vxrt4i.png" />
+                        <p class="list-element-name">Wolfpacks</p>
+                    </li>
+                    <li id="dashboardListElemnt2" class="dashboard-menu-list-element">
+                        <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722297/portfolio_ncrlyl.png" />
+                        <p class="list-element-name">Portfolio</p>
+                    </li>
+                    <li id="dashboardListElemnt3" class="dashboard-menu-list-element">
+                        <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722350/tranpsarancy_k6x7gh.png" />
+                        <p class="list-element-name">Transparency</p>
+                    </li>
+                    <li id="dashboardListElemnt4" class="dashboard-menu-list-element">
+                        <img class="list-element-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722386/allproperties_eailvg.png" />
+                        <p class="list-element-name">All Properties</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="mobileDashboard" class="mobile-bg-container">
+            <div class="mobile-profile-container">
+                <div class="mobile-logo-container">
+                    <img class="mobile-logo" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618724210/logowithoutname_kfpyqt.png" />
+                </div>
+                <div class="mobile-profile-box">
+                    <div class="mobile-notification-img">
+                        <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722547/message_li09sy.png" />
+                    </div>
+                    <div class="mobile-notification-img">
+                        <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722618/notification_vlke8x.png" />
+                    </div>
+                    <div>
+                        <img class="mobile-profile-img" id="profileImage" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722847/dhoni_mkzghp.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="wallet-container">
+                <div class="mobile-wallet-box">
+                    <img class="wallet-icon" id="walletIcon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618724351/menu_vliaph.png" />
+                    <p class="mobile-wallet">Wallet</p>
+                </div>
+                <div class="investor-box">
+                    <div class="investor-icon-box">
+                        <img class="mobile-investor-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722688/savemoney_gg6afe.png" />
+                    </div>
+                    <p class="mobile-investor-name">Investor</p>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <a style="color:#2C2C2C" class="mobile-link" href="#overview">Overview</a>
+                <a class="mobile-link" href="#savings">Savings</a>
+                <a class="mobile-link" href="#investments">Investments</a>
+            </div>
+            <div class="mobile-line-container">
+                <hr class="mobile-highlight-line" />
+                <hr class="mobile-lite-line" />
+            </div>
+
+
+            <div class="mobile-info-container">
+                <div class="mobile-info-box">
+                    <div class="mobile-balance">
+                        <p class="mobile-info">Total Balance</p>
+                        <img class="mbl-total-balance" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722895/popup_gwuvh6.png">
+                        <p class="pop-up mbl-total-balance-pop-up">Total Balance, it includes overall balance like Freedom coins, property investment & wolfpack investment. </p>
+
+                    </div>
+                    <p class="mobile-info" style="margin-top:-30px">: $60.00</p>
+                </div>
+                <div class="mobile-info-box">
+                    <p class="wallet-address">Wallet Address</p>
+                    <img class="mbl-qr-code" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723221/qrcode_vsx0kv.png" />
+                    <img src="https://as2.ftcdn.net/jpg/03/38/27/81/500_F_338278102_GJFa5X3bLsrH2OU5xLmJCCN8L9Fg6ttD.jpg" class="mbl-qr-pop" />
+                </div>
+            </div>
+            <div class="Checkings account-1">
+                <div class="heading-box">
+                    <p class="heading">Checking</p>
+                </div>
+                <div class="account-info">
+                    <p class="account-prop">Cash</p>
+                    <p>:</p>
+                    <p class="account-value">$20.00</p>
+                </div>
+                <div class="input-container">
+                    <p class="buy-coins account-prop">Buy Coins<sup class="super">TM</sup></p>
+                    <div class="input-box">
+                        <div id="mobileBuyInput" class="input">
+                            <p id="mobileBuyCoins" class="mobile-coins">0</p>
+                            <div class="arrow-container">
+                                <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/upArrow_max5pv.png" class="arrow" />
+                                <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/downArrow_nsdab8.png" class="arrow" />
+                            </div>
+                        </div>
+                        <button class="buy-btn button">
+                            Buy
+                        </button>
+                        <p class="pop-up mbl-buy-pop-up">Read FAQ's</p>
+                    </div>
+                </div>
+            </div>
+            <div class="savings account-2">
+                <div class="heading-box">
+                    <p class="heading">Savings</p>
+                </div>
+                <div class="account-info">
+                    <p class="account-prop">Invested</p>
+                    <p class="column">:</p>
+                    <p class="account-value">$20.00</p>
+                </div>
+                <div class="account-info payout">
+                    <p class="account-prop">Total Payout</p>
+                    <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722895/popup_gwuvh6.png" class="mbl-total-payout info-icon">
+                    <p class="pop-up mbl-total-payout-pop-up">Projected Total payments based on term an APR</p>
+                    <p class="column">:</p>
+                    <p class="account-value">$27.00</p>
+                </div>
+            </div>
+            <div class="transfers account-1">
+                <div class="heading-box">
+                    <p class="heading">Transfers</p>
+                </div>
+                <div class="account-info">
+                    <p class="account-prop">Paypal</p>
+                    <p>:</p>
+                    <p class="account-value">Bank Account</p>
+                </div>
+                <div class="input-container">
+                    <p class="buy-coins account-prop">Sell Coins<sup class="super">TM</sup></p>
+                    <div class="input-box">
+                        <div id="mobileSellInput" class="input">
+                            <p id="mobileSellCoins" class="mobile-coins">0</p>
+                            <div class="arrow-container">
+                                <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/upArrow_max5pv.png" class="arrow" />
+                                <img src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723549/downArrow_nsdab8.png" class="arrow" />
+                            </div>
+                        </div>
+                        <button class="sell-btn button">
+                            Sell
+                        </button>
+                        <p class="pop-up mbl-sell-pop-up">Read FAQ's</p>
+                    </div>
+                </div>
+            </div>
+            <div class="investments account-2">
+                <div class="heading-box">
+                    <p class="heading">Investments</p>
+                </div>
+                <div class="account-info">
+                    <p class="account-prop">Invested</p>
+                    <p class="column">:</p>
+                    <p class="account-value">$20.00</p>
+                </div>
+                <div class="account-info payout">
+                    <p class="account-prop">Contributed</p>
+
+                    <p class="column">:</p>
+                    <p class="account-value">$27.00</p>
+                </div>
+            </div>
+
+            <h1 class="mobile-assets-heading">Available Assets</h1>
+            <div class="mobile-asset-card">
+                <div class="mobile-asset-img-box">
+                    <img class="mobile-asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723737/lungs_zx3wh4.png" />
+                </div>
+                <div class="asset-data">
+                    <h1 class="mobile-asset-name">Potential Covid-19 Cure: Clinical Trial</h1>
+                    <div class="text-center">
+                        <p class="mobile-asset-subhead">Description:</p>
+                        <p class="mobile-asset-content">A well known, safe, generic medication that has been used for decades has been shown to….</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-asset-card">
+                <div class="asset-img-box">
+                    <img class="mobile-asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723739/mission_wottyo.png" />
+                </div>
+                <div class="asset-data">
+                    <div class="text-center">
+                        <div class="mission">
+                            <h1 class="mobile-asset-name">Mission</h1>
+                            <img class="mission-icon mbl-mission-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723820/missionIcon_pzzwqk.png" />
+                            <p class="pop-up mbl-mission-pop-up">For Profit Feed</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="mobile-asset-subhead text-center">Description:</p>
+                        <p class="mobile-asset-content">Ownership in Minuteman is decentralized and distributed democratically across its base of…</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-asset-card">
+                <div class="asset-img-box">
+                    <img class="mobile-asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723739/room_meewqs.png" />
+                </div>
+                <div class="asset-data">
+                    <h1 class="mobile-asset-name">20922 Avalon Drive</h1>
+                    <div class="text-center">
+                        <p class="mobile-asset-subhead text-center">Address:</p>
+                        <p class="mobile-asset-content">8801 Holly Road<br /> Tullahoma, TN 37388</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-asset-card">
+                <div class="asset-img-box">
+                    <img class="asset-img" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723738/lounge_kmat6c.png" />
+                </div>
+                <div class="asset-data">
+                    <h1 class="mobile-asset-name">17456 Eastgate Drive</h1>
+                    <div class="text-center">
+                        <p class="mobile-asset-subhead">Address:</p>
+                        <p class="mobile-asset-content">23 North Briarwood Avenue<br /> Williamsburg, VA 23185</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="mobile-transactions-heading">Recent Transcations</h1>
+                <div class="transaction-card">
+                    <table>
+                        <th class="mobile-trans-head">Date</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">09 Mar, 2020</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">From</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">20922 Avalon Drive (Jon Hea..)<br />— Dividend</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">Amount</th>
+                        <td class="mobile-trans-value"> :</td>
+                        <td class="mobile-trans-value mobile-amount">$10</td>
+                    </table>
+                </div>
+                <div class="transaction-card">
+                    <table>
+                        <th class="mobile-trans-head">Date</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">09 Mar, 2020</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">From</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">Robert.D<br />— Dividend</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">Amount</th>
+                        <td class="mobile-trans-value"> :</td>
+                        <td class="mobile-trans-value mobile-amount">$100</td>
+                    </table>
+                </div>
+                <div class="transaction-card">
+                    <table>
+                        <th class="mobile-trans-head">Date</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">09 Mar, 2020</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">From</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">Robert.D<br />— Dividend</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">Amount</th>
+                        <td class="mobile-trans-value"> :</td>
+                        <td class="mobile-trans-value mobile-amount">$100</td>
+                    </table>
+                </div>
+                <div class="transaction-card">
+                    <table>
+                        <th class="mobile-trans-head">Date</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">09 Mar, 2020</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">From</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">Robert.D<br />— Dividend</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">Amount</th>
+                        <td class="mobile-trans-value"> :</td>
+                        <td class="mobile-trans-value mobile-amount">$100</td>
+                    </table>
+                </div>
+                <div class="transaction-card">
+                    <table>
+                        <th class="mobile-trans-head">Date</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">09 Mar, 2020</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">From</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">Robert.D<br />— Dividend</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">Amount</th>
+                        <td class="mobile-trans-value"> :</td>
+                        <td class="mobile-trans-value mobile-amount">$100</td>
+                    </table>
+                </div>
+                <div class="transaction-card">
+                    <table>
+                        <th class="mobile-trans-head">Date</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">09 Mar, 2020</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">From</th>
+                        <td class="mobile-trans-value">:</td>
+                        <td class="mobile-trans-value">Robert.D<br />— Dividend</td>
+                    </table>
+                    <table>
+                        <th class="mobile-trans-head">Amount</th>
+                        <td class="mobile-trans-value"> :</td>
+                        <td class="mobile-trans-value mobile-amount">$100</td>
+                    </table>
+                </div>
+            </div>
+            <div class="mobile-btm-container">
+                <a href="#" class="mobile-view-more">View More</a>
+                <img class="company-logo" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723221/companyLogo_rc5ue9.png" />
+            </div>
+        </div>
+
+    </div>
+    <div class="close mobile-profile-section" id="mobileProfileSection">
+        <div class="profile-close ">
+            <img id="closeProfile" class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723054/profileClose_rbukjw.png" />
+        </div>
+        <ul class="dropdown-list">
+            <li class="dropdown-element">
+                <img class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618722941/profile_fztehx.png" />
+                <p class="dropdown-name">Profile</p>
+            <li>
+                <hr />
+            <li class="dropdown-element">
+                <img class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723019/account_cyexfh.png" />
+                <p class="dropdown-name">Update Account</p>
+            <li>
+                <hr />
+            <li class="dropdown-element">
+                <img class="dropdown-icon" src="https://res.cloudinary.com/dictfqp7i/image/upload/v1618723019/logout_kyrask.png" />
+                <p class="dropdown-name">Log Out</p>
+            <li>
+
+        </ul>
+
+    </div>
+</body>
+
+</html>
